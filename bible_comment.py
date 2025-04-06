@@ -22,7 +22,8 @@ def ask_bible_explanation(book, chapter, verse, api_key):
 # Streamlit 앱 메인 함수
 def main():
     st.set_page_config(page_title="📖 성경 구절 해설 앱")
-    st.title("📖 성경 말씀 해설기 (제작: 이철현)")
+    st.title("📖 성경 말씀 해설기")
+    st.text("제작: 이철현")
 
     if "GEMINI_API" not in st.session_state:
         st.session_state["GEMINI_API"] = ""
