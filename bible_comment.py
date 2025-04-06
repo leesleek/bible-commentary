@@ -23,7 +23,7 @@ def ask_bible_explanation(book, chapter, verse, api_key):
 def main():
     st.set_page_config(page_title="📖 성경 구절 해설 앱")
     st.title("📖 성경 말씀 해설기")
-    st.text("제작: 이철현")
+    st.markdown("<div style='text-align: right;'>제작: 이철현</div>", unsafe_allow_html=True)
 
     if "GEMINI_API" not in st.session_state:
         st.session_state["GEMINI_API"] = ""
